@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb":{
+    "database":"abzlinksport_db",
+    "name":"mongodb",
+    "connector":"mongodb",
+    "extended":true,
+    "allowExtendedOperators":true
+  }
+}

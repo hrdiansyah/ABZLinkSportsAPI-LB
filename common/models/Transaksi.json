@@ -1,0 +1,38 @@
+{
+    "name": "Transaksi",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "transaksi_name": {
+        "type": "string",
+        "required" : true
+      },
+        "harga": {
+        "type": "string",
+        "required": true
+      },
+      "kuantity": {
+        "type": "string",
+        "required": true
+      },
+      "product_kategory": {
+        "type": "string",
+        "required": true
+      },
+      "product_desc": {
+        "type": "string",
+        "required": true
+      }
+        
+    },
+    "validations": [],
+    "relations": {
+      
+    },
+    "acls": [],
+    "methods": {}
+  }
+  
