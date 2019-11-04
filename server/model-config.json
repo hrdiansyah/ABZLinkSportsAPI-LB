@@ -13,13 +13,16 @@
       "./mixins"
     ]
   },
-  "product": {
+  "Product": {
     "dataSource": "mongodb"
   },
-  "transaksi": {
+  "Transaksi": {
     "dataSource": "mongodb"
   },
-  "User": {
+  "chart": {
+    "dataSource": "mongodb"
+  },
+    "User": {
     "dataSource": "mongodb"
   },
   "AccessToken": {

@@ -1,10 +1,10 @@
 'use strict';
 
-module.exports = function(Transaksi) {
-    Transaksi.getTransaksiByName = function(name,  callback) {
+module.exports = function(chart) {
+    chart.getchartByName = function(name,  callback) {
             new Promise(function(resolve, reject) {
                 //find name
-                Transaksi.find( {where :{transaksi_name : {like : name}}}, function(err, result){
+                chart.find( {where :{product_name : {like : name}}}, function(err, result){
                     if (err) reject (err);
                     if (result === null){
                         err = new Error("User Not Found");
@@ -21,17 +21,17 @@ module.exports = function(Transaksi) {
             });
         };
 
-    Transaksi.remoteMethod(
-        'getTransaksiByName',
+    chart.remoteMethod(
+        'getchartByName',
         {
             description : 'get user by name',
             accepts: [
-                {arg : 'Transaksi_name', type : 'string'}
+                {arg : 'product_name', type : 'string'}
             ],
             returns : {
                 arg : 'res', type: 'object', root: true
             },
-            http:{path: '/getTransaksiByName', verb: 'get'},
+            http:{path: '/getchartByName', verb: 'get'},
         }
     );
 
