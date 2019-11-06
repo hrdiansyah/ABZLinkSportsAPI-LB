@@ -30,7 +30,11 @@
     },
     "validations": [],
     "relations": {
-      
+      "chart":{
+        "type":"belongsTo",
+        "model":"chart",
+        "foreignkey":"productId"
+      }
     },
     "acls": [],
     "methods": {}

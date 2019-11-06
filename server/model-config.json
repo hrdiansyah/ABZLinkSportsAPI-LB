@@ -22,6 +22,9 @@
   "chart": {
     "dataSource": "mongodb"
   },
+  "pengiriman": {
+    "dataSource": "mongodb"
+  },
     "User": {
     "dataSource": "mongodb"
   },
