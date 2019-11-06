@@ -19,8 +19,18 @@
   "Transaksi": {
     "dataSource": "mongodb"
   },
+ 
+  "container":{
+     "dataSource":"storage",
+     "public":true
+  },
+
   "chart": {
     "dataSource": "mongodb"
+  },
+  "admin": {
+    "dataSource": "mongodb",
+    "public": true
   },
     "User": {
     "dataSource": "mongodb"

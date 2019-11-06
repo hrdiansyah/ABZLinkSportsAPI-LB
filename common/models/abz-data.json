@@ -5,7 +5,20 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "namabarang":{
+      "type":"string",
+      "required": true
+    },
+    "ukuran":{
+      "type":"string",
+      "required": true
+    },
+    "harga":{
+      "type":"string",
+      "required": true
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [],

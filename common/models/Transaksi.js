@@ -15,7 +15,7 @@ module.exports = function(Transaksi) {
                 });
             }).then(function(res) {
                 if (!res) callback (err);
-                return callback(null, res);
+                return callback(null, res[0]);
             }).catch(function (err) {
                 callback (err);
             });
