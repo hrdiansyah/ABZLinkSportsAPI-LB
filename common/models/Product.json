@@ -26,10 +26,15 @@
         "type": "string",
         "required": true
       },
+<<<<<<< HEAD
       "berat": {
+=======
+      "imgurl": {
+>>>>>>> 5f4620a723e9a4648d99f6fdb5a08f3a06f160ab
         "type": "string",
         "required": true
       }
+      
         
     },
     "validations": [],
