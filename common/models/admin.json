@@ -1,46 +1,30 @@
 {
-    "name": "Product",
+    "name": "admin",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
       "validateUpsert": true
     },
     "properties": {
-      "product_name": {
-        "type": "string",
-        "required" : true
-      },
-        "harga": {
+      "username": {
         "type": "string",
         "required": true
       },
-      "kuantity": {
+      "Password": {
         "type": "string",
         "required": true
       },
-      "product_kategory": {
+      "TanggalMasuk": {
         "type": "string",
         "required": true
       },
-      "product_desc": {
-        "type": "string",
-        "required": true
-      },
-      "berat": {
+      "email": {
         "type": "string",
         "required": true
       }
-        
     },
     "validations": [],
-    "relations": {
-      "chart":{
-        "type":"belongsTo",
-        "model":"chart",
-        "foreignkey":"productId"
-      }
-    },
+    "relations": {},
     "acls": [],
     "methods": {}
   }
-  

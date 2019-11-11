@@ -16,13 +16,22 @@
   "Product": {
     "dataSource": "mongodb"
   },
-  "Transaksi": {
+  "transaksi": {
     "dataSource": "mongodb"
   },
-  "chart": {
+ 
+  "container":{
+     "dataSource":"storage",
+     "public":true
+  },
+
+  "cart": {
     "dataSource": "mongodb"
   },
   "pengiriman": {
+    "dataSource": "mongodb"
+  },
+  "diskon": {
     "dataSource": "mongodb"
   },
     "User": {

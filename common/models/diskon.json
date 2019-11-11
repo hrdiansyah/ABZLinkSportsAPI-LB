@@ -1,39 +1,26 @@
 {
-    "name": "chart",
+    "name": "diskon",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
       "validateUpsert": true
     },
     "properties": {
-      "product_name": {
-        "type": "string",
-        "required" : true
-      },
-        "catatan": {
+      "diskon": {
         "type": "string",
         "required": true
       },
-      "kuantity": {
+      "potongan": {
         "type": "string",
         "required": true
       },
-      "product_kategory": {
-        "type": "string",
-        "required": true
-      },
-      "product_desc": {
+      "nilai": {
         "type": "string",
         "required": true
       }
     },
     "validations": [],
     "relations": {
-      "Product":{
-        "type":"hasMany",
-        "model":"Product",
-        "foreignkey":"productId"
-      }
       
     },
     "acls": [],

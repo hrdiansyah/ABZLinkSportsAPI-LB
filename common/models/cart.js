@@ -1,10 +1,10 @@
 'use strict';
 
-module.exports = function(chart) {
-    chart.getchartByName = function(name,  callback) {
+module.exports = function(cart) {
+    cart.getcartById_customer = function(name,  callback) {
             new Promise(function(resolve, reject) {
                 //find name
-                chart.find( {where :{product_name : {like : name}}}, function(err, result){
+                cart.find( {where :{id_customer : {like : name}}}, function(err, result){
                     if (err) reject (err);
                     if (result === null){
                         err = new Error("User Not Found");
@@ -15,23 +15,23 @@ module.exports = function(chart) {
                 });
             }).then(function(res) {
                 if (!res) callback (err);
-                return callback(null, res);
+                return callback(null, res[0]);
             }).catch(function (err) {
                 callback (err);
             });
         };
 
-    chart.remoteMethod(
-        'getchartByName',
+    cart.remoteMethod(
+        'getcartById_customer',
         {
             description : 'get user by name',
             accepts: [
-                {arg : 'product_name', type : 'string'}
+                {arg : 'id_customer', type : 'string'}
             ],
             returns : {
                 arg : 'res', type: 'object', root: true
             },
-            http:{path: '/getchartByName', verb: 'get'},
+            http:{path: '/getcartById_customer', verb: 'get'},
         }
     );
 

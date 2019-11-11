@@ -1,24 +1,16 @@
 {
-    "name": "pengiriman",
+    "name": "cart",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
       "validateUpsert": true
     },
     "properties": {
-      "kurir": {
+      "id_product": {
         "type": "string",
         "required": true
       },
-      "jenis_pengiriman": {
-        "type": "string",
-        "required": true
-      },
-      "biaya_pengiriman": {
-        "type": "string",
-        "required": true
-      },
-      "estimasi_waktu_sampai": {
+      "id_customer": {
         "type": "string",
         "required": true
       }

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(pengiriman) {
-    pengiriman.getpengirimanByName = function(name,  callback) {
+    pengiriman.getpengirimanBykurir = function(name,  callback) {
             new Promise(function(resolve, reject) {
                 //find name
                 pengiriman.find( { where :{ kurir : { like : name } } }, function ( err, result ) {
@@ -22,16 +22,16 @@ module.exports = function(pengiriman) {
         };
 
     pengiriman.remoteMethod(
-        'getpengirimanByName',
+        'getpengirimanBykurir',
         {
-            description : 'get user by name',
+            description : 'get user by kurir',
             accepts: [
-                {arg : 'pengiriman_name', type : 'string'}
+                {arg : 'pengiriman_kurir', type : 'string'}
             ],
             returns : {
                 arg : 'res', type: 'object', root: true
             },
-            http:{path: '/getpengirimanByName', verb: 'get'},
+            http:{path: '/getpengirimanBykurir', verb: 'get'},
         }
     );
 
