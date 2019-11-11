@@ -1,0 +1,29 @@
+{
+    "name": "cart",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "id_product": {
+        "type": "string",
+        "required": true
+      },
+      "id_customer": {
+        "type": "string",
+        "required": true
+      },
+      "imgurl":{
+        "type":"string",
+        "required":true
+      }
+    },
+    "validations": [],
+    "relations": {
+      
+    },
+    "acls": [],
+    "methods": {}
+  }
+  

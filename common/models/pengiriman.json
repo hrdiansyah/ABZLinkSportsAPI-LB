@@ -1,48 +1,31 @@
 {
-    "name": "Product",
+    "name": "pengiriman",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
       "validateUpsert": true
     },
     "properties": {
-      "product_name": {
-        "type": "string",
-        "required" : true
-      },
-        "harga": {
+      "kurir": {
         "type": "string",
         "required": true
       },
-      "kuantity": {
+      "jenis_pengiriman": {
         "type": "string",
         "required": true
       },
-      "product_kategory": {
+      "biaya_pengiriman": {
         "type": "string",
         "required": true
       },
-      "product_desc": {
-        "type": "string",
-        "required": true
-      },
-      "berat": {
-        "type": "string"
-      },
-      "imgurl": {
+      "estimasi_waktu_sampai": {
         "type": "string",
         "required": true
       }
-      
-        
     },
     "validations": [],
     "relations": {
-      "chart":{
-        "type":"belongsTo",
-        "model":"chart",
-        "foreignkey":"productId"
-      }
+      
     },
     "acls": [],
     "methods": {}

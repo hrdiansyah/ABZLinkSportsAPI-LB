@@ -1,36 +1,47 @@
 {
-    "name": "Transaksi",
+    "name": "transaksi",
     "base": "PersistedModel",
     "idInjection": true,
     "options": {
       "validateUpsert": true
     },
     "properties": {
-      "transaksi_name": {
+      "id_product": {
         "type": "string",
         "required" : true
       },
-        "harga": {
+      "id_customer": {
         "type": "string",
-        "required": true
+        "required" : true
+      },
+        "catatan": {
+        "type": "string"
       },
       "kuantity": {
         "type": "string",
         "required": true
       },
-      "product_kategory": {
+      "diskon": {
+        "type": "string"
+      },
+      "kurir": {
         "type": "string",
         "required": true
       },
-      "product_desc": {
+      "total": {
         "type": "string",
         "required": true
+      },
+      "metode_bayar": {
+        "type": "string",
+        "required": true
+      },
+      "status": {
+        "type": "string"
       }
-        
     },
     "validations": [],
     "relations": {
-      
     },
     "acls": [],
     "methods": {}
