@@ -26,9 +26,7 @@
         "type": "string",
         "required": true
       },
-      "berat": {
-        "type": "string"
-      },
+      
       "imgurl": {
         "type": "string",
         "required": true
