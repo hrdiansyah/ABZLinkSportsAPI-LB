@@ -17,6 +17,10 @@
       "nilai": {
         "type": "string",
         "required": true
+      },
+      "imgurl": {
+        "type": "string",
+        "required": true
       }
     },
     "validations": [],
