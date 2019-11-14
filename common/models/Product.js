@@ -26,7 +26,7 @@ module.exports = function(Product) {
         {
             description : 'get user by name',
             accepts: [
-                {arg : 'password', type : 'string'}
+                {arg : 'product_name', type : 'string'}
             ],
             returns : {
                 arg : 'res', type: 'object', root: true

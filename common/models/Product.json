@@ -26,13 +26,17 @@
         "type": "string",
         "required": true
       },
-<<<<<<< HEAD
-      "berat": {
-=======
-      "imgurl": {
->>>>>>> 5f4620a723e9a4648d99f6fdb5a08f3a06f160ab
+      "berat": { 
         "type": "string",
         "required": true
+      },
+      "imgurl": {
+        "type": "string",
+        "required": true
+      },
+      "createAt": {
+        "type": "date",
+        "defaultFn": "now"
       }
       
         
