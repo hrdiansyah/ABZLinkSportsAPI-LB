@@ -6,75 +6,79 @@
       "validateUpsert": true
     },
     "properties": {
-      "id_product": {
+      "Id_product": {
         "type": "string",
         "required" : true
       },
-      "id_customer": {
+      "Id_customer": {
         "type": "string",
         "required" : true
       },
-        "size": {
-        "type": "string",
-        "required": true
-      },
-      "jumlah": {
+      "Harga_barang": {
         "type": "number",
         "required": true
       },
-      "catatan": {
+      "Size": {
         "type": "string",
         "required": true
       },
-      "alamat": {
+      "Jumlah": {
+        "type": "number",
+        "required": true
+      },
+      "Catatan": {
         "type": "string",
         "required": true
       },
-      "kecamatan": {
+      "Alamat": {
         "type": "string",
         "required": true
       },
-      "kota": {
+      "Kecamatan": {
         "type": "string",
         "required": true
       },
-      "negara": {
+      "Kota": {
         "type": "string",
         "required": true
       },
-      "provinsi": {
+      "Negara": {
         "type": "string",
         "required": true
       },
-      "kodepos": {
+      "Provinsi": {
         "type": "string",
         "required": true
       },
-      "phone": {
+      "Kodepos": {
         "type": "string",
         "required": true
       },
-      "shipping": {
+      "Phone": {
         "type": "string",
         "required": true
       },
-      "metode_pembayaran": {
+      "Shipping": {
         "type": "string",
         "required": true
       },
-      "discont": {
+      "Metode_pembayaran": {
         "type": "string",
         "required": true
       },
-      "biaya_kirim": {
+      "Discont": {
+        "type": "number",
+        "required": true
+      },
+      "Biaya_kirim": {
         "type": "string",
         "required": true
       },
-      "sub_total": {
+      "Sub_total": {
         "type": "string",
         "required": true
       },
-      "total": {
+      "Total": {
         "type": "string",
         "required": true
       },
