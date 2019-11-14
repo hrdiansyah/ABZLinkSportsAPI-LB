@@ -18,7 +18,7 @@
         "type": "string",
         "required": true
       },
-      "product_kategory": {
+      "product_kategori": {
         "type": "string",
         "required": true
       },
@@ -30,6 +30,10 @@
       "imgurl": {
         "type": "string",
         "required": true
+      },
+      "createAt": {
+        "type": "date",
+        "defaultFn": "now"
       }
       
         
