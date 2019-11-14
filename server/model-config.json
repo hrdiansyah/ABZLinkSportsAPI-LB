@@ -25,6 +25,11 @@
      "public":true
   },
 
+  "containerdsc":{
+    "dataSource":"storage",
+    "public":true
+ },
+
   "cart": {
     "dataSource": "mongodb"
   },
