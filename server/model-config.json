@@ -39,6 +39,9 @@
   "diskon": {
     "dataSource": "mongodb"
   },
+  "payment": {
+    "dataSource": "mongodb"
+  },
     "User": {
     "dataSource": "mongodb"
   },

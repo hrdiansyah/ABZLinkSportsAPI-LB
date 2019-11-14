@@ -15,7 +15,7 @@ module.exports = function(cart) {
                 });
             }).then(function(res) {
                 if (!res) callback (err);
-                return callback(null, res[0]);
+                return callback(null, res);
             }).catch(function (err) {
                 callback (err);
             });

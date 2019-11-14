@@ -1,0 +1,96 @@
+{
+    "name": "payment",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "Id_product": {
+        "type": "string",
+        "required" : true
+      },
+      "Id_customer": {
+        "type": "string",
+        "required" : true
+      },
+      "Harga_barang": {
+        "type": "number",
+        "required": true
+      },
+      "Size": {
+        "type": "string",
+        "required": true
+      },
+      "Jumlah": {
+        "type": "number",
+        "required": true
+      },
+      "Catatan": {
+        "type": "string",
+        "required": true
+      },
+      "Alamat": {
+        "type": "string",
+        "required": true
+      },
+      "Kecamatan": {
+        "type": "string",
+        "required": true
+      },
+      "Kota": {
+        "type": "string",
+        "required": true
+      },
+      "Negara": {
+        "type": "string",
+        "required": true
+      },
+      "Provinsi": {
+        "type": "string",
+        "required": true
+      },
+      "Kodepos": {
+        "type": "string",
+        "required": true
+      },
+      "Phone": {
+        "type": "string",
+        "required": true
+      },
+      "Shipping": {
+        "type": "string",
+        "required": true
+      },
+      "Metode_pembayaran": {
+        "type": "string",
+        "required": true
+      },
+      "Discont": {
+        "type": "number",
+        "required": true
+      },
+      "Biaya_kirim": {
+        "type": "string",
+        "required": true
+      },
+      "Sub_total": {
+        "type": "string",
+        "required": true
+      },
+      "Total": {
+        "type": "string",
+        "required": true
+      },
+      "imgurl": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {
+    },
+    "acls": [],
+    "methods": {}
+  }
+  
