@@ -18,15 +18,11 @@
         "type": "string",
         "required": true
       },
-      "product_kategory": {
+      "product_kategori": {
         "type": "string",
         "required": true
       },
       "product_desc": {
-        "type": "string",
-        "required": true
-      },
-      "berat": { 
         "type": "string",
         "required": true
       },
