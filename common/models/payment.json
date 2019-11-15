@@ -6,11 +6,11 @@
       "validateUpsert": true
     },
     "properties": {
-      "Id_product": {
+      "Nama_product": {
         "type": "string",
         "required" : true
       },
-      "Id_customer": {
+      "Nama_customer": {
         "type": "string",
         "required" : true
       },
@@ -85,6 +85,10 @@
       "imgurl": {
         "type": "string",
         "required": true
+      },
+      "status": {
+        "type": "string",
+        "default": "Request"
       }
     },
     "validations": [],
